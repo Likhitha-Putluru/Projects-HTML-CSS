@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+  <style>
+    body{
+    background-color:#abcdef;
+    }
+    form{
+    background-color:#ffffff;
+    margin:auto;
+    width:50%;
+    height:100%;
+    padding:25px;
+    }
+    .div-form,.div-form1{
+    text-align:left;
+    margin-bottom:15px;
+    }
+    .div-form label,.div-form1 label{
+    display:block;
+    font-weight:bold;
+
+    }
+    .div-form input,.div-form select,.div-form textarea
+     {
+     border:2px solid;
+     display:block;
+     padding:10px;
+     width:90%;
+     }
+     .div-form1 input [type="radio"],.div-form1 input [type="checkbox"]
+     {
+     border:2px,solid;
+     display:inline-block;
+     padding:10px;
+     }
+     button{
+     background-color:#00ff55;
+     width:95%;
+     padding:10px;
+     margin-top:20px;
+     margin-bottom:50px;
+     }
+  </style>
+</head>
+<body>
+<center><h1>Survey Form</h1></center>
+<form>
+  <div class="div-form">
+    <label for="tbname">Name:</label><br>
+    <input type="text" id="tbname" placeholder="Enter Your Name"/>
+  </div>
+  <div class="div-form">
+    <label for="tbmail">Email:</label><br>
+    <input type="email" id="tbmail" placeholder="Enter Your Email"/>
+  </div>
+  <div class="div-form">
+    <label for="tbph">Mobile Number:</label><br>
+    <input type="number" id="tbph" placeholder="Enter Your Mobile Number"/>
+  </div>
+  <div class="div-form">
+    <label for="tbage">Age:</label><br>
+    <input type="number" id="tbage" placeholder="Enter Your Age"/>
+  </div>
+  <div class="div-form">
+    <label for="ddlselect">Select Role:</label><br>
+    <Select id="ddlselect">
+      <option>--Select Role--</option>
+      <option>Student</option>
+      <option>Intern</option>
+      <option>Professional</option>
+      <option>Other</option>
+    </Select>
+  </div>
+  <div class="div-form1">
+    <label for="idmale">Gender:</label><br>
+    <input type="radio" id="idmale" name="Gender">Male<br>
+    <input type="radio" id="idfemale" name="Gender">Female<br>
+    <input type="radio" id="idothers" name="Gender">Others
+  </div>
+  <div class="div-form1">
+    <label>Courses:</label><br>
+    <input type="checkbox" id="idpy">Python<br>
+    <input type="checkbox" id="idc">C<br>
+    <input type="checkbox" id="idja">Java<br>
+    <input type="checkbox" id="idcpp">C++<br>
+    <input type="checkbox" id="idht">HTML<br>
+    <input type="checkbox" id="idcs">CSS<br>
+    <input type="checkbox" id="idjs">Javascript<br>
+  </div>
+  <div class="div-form">
+    <label for="idta">Suggestions and Comments:</label><br>
+    <textarea id="idta">Enter your Suggestions here....</textarea>
+  </div>
+
+  <button type="submit" id="idsub" Value="SUBMIT">SUBMIT</button>
+
+
+</form>
+
+
+</body>
+</html>
